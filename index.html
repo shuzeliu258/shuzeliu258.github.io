@@ -4,118 +4,117 @@
   <meta charset="UTF-8">
   <title>Shuze Liu - Academic Homepage</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; max-width: 900px; }
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; }
+    .container { display: flex; max-width: 1200px; margin: 0 auto; }
+    .sidebar { width: 250px; background: #f4f4f4; padding: 20px; min-height: 100vh; }
+    .content { flex: 1; padding: 40px; }
     h1, h2 { color: #003366; }
-    h1 { border-bottom: 2px solid #003366; padding-bottom: 5px; }
-    .contact { margin-bottom: 20px; }
-    .section { margin-top: 30px; }
+    h1 { margin-top: 0; }
     ul { margin: 0; padding-left: 20px; }
     li { margin-bottom: 8px; }
+    .sidebar a { color: #003366; text-decoration: none; }
+    .sidebar a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>Shuze Liu</h1>
-  <div class="contact">
-    <p>Email: <a href="mailto:sliu11@scu.edu">sliu11@scu.edu</a> | Mobile: +1 669-325-9963</p>
-    <p>Santa Clara University, CA, USA</p>
-    <p><a href="https://github.com/shuzeliu258/shuzeliu258.github.io/raw/main/ShuzeLiu-CV.pdf">Download CV (PDF)</a></p>
-  </div>
+  <div class="container">
+    <!-- 左边栏 -->
+    <div class="sidebar">
+      <h1>Shuze Liu</h1>
+      <p>Santa Clara University<br>CA, USA</p>
+      <p>Email: <a href="mailto:sliu11@scu.edu">sliu11@scu.edu</a></p>
+      <p>Mobile: +1 669-325-9963</p>
+      <p><a href="https://github.com/shuzeliu258/shuzeliu258.github.io/raw/main/ShuzeLiu-CV.pdf">Download CV (PDF)</a></p>
+    </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><b>Santa Clara University</b>, M.S. in Computer Science and Engineering (09/2024 – 07/2026, expected)<br>
-          Relevant Coursework: Artificial Intelligence, Network Technology</li>
-      <li><b>Sun Yat-sen University</b>, B.Eng. in Software Engineering (09/2020 – 06/2024)<br>
-          Relevant Coursework: Mathematical Analysis, Computer Programming, Computer Organization, Data Structures and Algorithms, Operating Systems, Artificial Intelligence, Signals and Systems, Java & OOP, Computer Graphics, Computer Networks, Database Systems, Cloud Computing Technology</li>
-    </ul>
-  </div>
+    <!-- 右边正文 -->
+    <div class="content">
+      <div class="section">
+        <h2>Education</h2>
+        <ul>
+          <li><b>Santa Clara University</b>, M.S. in Computer Science and Engineering (09/2024 – 07/2026, expected)<br>
+              Relevant Coursework: Artificial Intelligence, Network Technology</li>
+          <li><b>Sun Yat-sen University</b>, B.Eng. in Software Engineering (09/2020 – 06/2024)<br>
+              Relevant Coursework: Mathematical Analysis, Computer Programming, Computer Organization, Data Structures and Algorithms, Operating Systems, Artificial Intelligence, Signals and Systems, Java & OOP, Computer Graphics, Computer Networks, Database Systems, Cloud Computing Technology</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>Skills & Languages</h2>
-    <ul>
-      <li><b>Computer Skills:</b> Proficient in C++, C, Java, Python; Basic application of MySQL, Objective-C</li>
-      <li><b>Languages:</b> Chinese (native), English (fluent)</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Skills & Languages</h2>
+        <ul>
+          <li><b>Computer Skills:</b> Proficient in C++, C, Java, Python; Basic application of MySQL, Objective-C</li>
+          <li><b>Languages:</b> Chinese (native), English (fluent)</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>Publication</h2>
-    <ul>
-      <li><i>Analysis of Path Planning of UAV in Short-distance Logistics Application.</i> Shijia Guo†, Xuan Li†, and <b>Shuze Liu†</b>, CONF-MSS 2023.</li>
-    </ul>
-  </div>
+      <div class="section">
+        <h2>Publication</h2>
+        <ul>
+          <li><i>Analysis of Path Planning of UAV in Short-distance Logistics Application.</i> Shijia Guo†, Xuan Li†, and <b>Shuze Liu†</b>, CONF-MSS 2023.</li>
+        </ul>
+      </div>
 
-  <div class="section">
-  <h2>Research Experience</h2>
-  <ul>
+      <div class="section">
+        <h2>Research Experience</h2>
+        <ul>
+          <li>
+            <b>Asynchronous Federated Learning Research</b><br>
+            Independent Research, Santa Clara University, Santa Clara, CA (09/2025 – present, Supervisor: Xiao Li)
+            <ul>
+              <li>Reproduced the FedLC algorithm for edge computing environments.</li>
+              <li>Extended two-tier design into a three-tier hierarchical architecture.</li>
+              <li>Improved framework with visualization tools and EMNIST evaluation.</li>
+              <li>Ongoing work on non-IID benchmarks.</li>
+            </ul>
+          </li>
+          <li>
+            <b>Automated Garbage Classification with CNN and ResNet34</b><br>
+            Team Project, Santa Clara University (05/2025 – 06/2025)
+            <ul>
+              <li>Designed CNN and ResNet34 models on TrashNet dataset (2,500+ images).</li>
+              <li>CNN reached 64.7% accuracy; ResNet34 achieved 75.8% accuracy.</li>
+              <li>Confusion matrix analysis showed improved class separability.</li>
+            </ul>
+          </li>
+          <li>
+            <b>Network Measurement Reconstruction with DNNs</b><br>
+            Bachelor Thesis, Sun Yat-sen University (05/2023 – 06/2024, Supervisor: Prof. Yi Xie)
+            <ul>
+              <li>Built OMNeT++ simulations and datasets for traffic reconstruction.</li>
+              <li>Trained PyTorch models achieving higher accuracy than tensor-completion.</li>
+            </ul>
+          </li>
+          <li>
+            <b>UAV Path Planning with MATLAB</b><br>
+            Team Project (01/2023 – 02/2023, Supervisor: Peng Lu, HKU)
+            <ul>
+              <li>Explored A*, genetic algorithm, and bionic algorithm for UAV path planning.</li>
+              <li>Simulated with MATLAB and Simulink; contributed to a publication.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-    <li>
-      <b>Asynchronous Federated Learning Research</b>  
-      <br> Independent Research, Santa Clara University, Santa Clara, CA (09/2025 – present, Supervisor: Xiao Li)  
-      <ul>
-        <li>Reproduced the FedLC (asynchronous federated learning with local collaboration) algorithm from existing literature for edge computing environments.</li>
-        <li>Extending the original two-tier design into a three-tier hierarchical architecture (client–server–meta server) to enhance scalability and mitigate communication delays.</li>
-        <li>Improving the experimental framework with visualization tools and EMNIST evaluation.</li>
-        <li>Ongoing work focuses on implementing the extended architecture in code and conducting experiments on non-IID benchmarks.</li>
-      </ul>
-    </li>
+      <div class="section">
+        <h2>Independent Projects</h2>
+        <ul>
+          <li><b>Library Management System</b> (12/2022 – 01/2023)<br>
+              Designed database with PowerDesigner; implemented with MySQL and Java.</li>
+          <li><b>Network Topology Configuration</b> (12/2022 – 01/2023)<br>
+              Configured dynamic routing and VLANs in Cisco Packet Tracer.</li>
+          <li><b>Chat Application Development</b> (09/2022 – 01/2023)<br>
+              Implemented multithreading and TCP/UDP communication in Java.</li>
+        </ul>
+      </div>
 
-    <li>
-      <b>Automated Garbage Classification with CNN and ResNet34</b>  
-      <br> Team Project, Santa Clara University, Santa Clara, CA (05/2025 – 06/2025)  
-      <ul>
-        <li>Designed and implemented deep learning models (custom 7-layer CNN, ResNet34) for six-category garbage classification on the TrashNet dataset (2,500+ images).</li>
-        <li>CNN reached 64.7% test accuracy with fast convergence but clear overfitting.</li>
-        <li>ResNet34 achieved 75.8% test accuracy with stable loss curves and stronger generalization.</li>
-        <li>Confusion matrix analysis showed ResNet34 reduced misclassification in most classes (e.g., paper and cardboard).</li>
-      </ul>
-    </li>
-
-    <li>
-      <b>Network Measurement Reconstruction with DNNs</b>  
-      <br> Bachelor Thesis, Sun Yat-sen University, Guangzhou, China (05/2023 – 06/2024, Supervisor: Prof. Yi Xie)  
-      <ul>
-        <li>Conducted research on reconstructing missing network traffic measurements using deep neural networks (DNN).</li>
-        <li>Built simulation environment with OMNeT++, generated random and real-world traffic datasets, and preprocessed pcap files for model input.</li>
-        <li>Implemented and trained models in PyTorch with ReLU and SmoothL1Loss, achieving high reconstruction accuracy at optimal learning rate (0.001).</li>
-        <li>Compared against tensor-completion methods, showing DNN’s advantage in modeling nonlinear traffic relationships.</li>
-      </ul>
-    </li>
-
-    <li>
-      <b>UAV Path Planning with MATLAB</b>  
-      <br> Team Project, Online (01/2023 – 02/2023, Supervisor: Peng Lu, HKU)  
-      <ul>
-        <li>Explored multiple UAV path planning algorithms, including A*, genetic algorithm, and bionic algorithm.</li>
-        <li>Simulated UAV controller through MATLAB and Simulink.</li>
-        <li>Conducted experiments on various algorithms and contributed to a publication.</li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-
-  <div class="section">
-    <h2>Independent Projects</h2>
-    <ul>
-      <li><b>Library Management System</b> (12/2022 – 01/2023)<br>
-          Designed database with PowerDesigner; implemented with MySQL and Java.</li>
-      <li><b>Network Topology Configuration</b> (12/2022 – 01/2023)<br>
-          Configured dynamic routing and VLANs in Cisco Packet Tracer.</li>
-      <li><b>Chat Application Development</b> (09/2022 – 01/2023)<br>
-          Implemented multithreading and TCP/UDP communication in Java; Designed UI to process the database</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Activities</h2>
-    <ul>
-      <li>Organizer, General Affairs Department, School of Computer Science, Sun Yat-sen University (10/2020 – 07/2022): Coordinated inter-department communication, arranged activities, managed finances.</li>
-      <li>Member, East Campus Radio Station, Sun Yat-sen University (10/2020 – 07/2021): Participated in radio activities, produced promotional videos.</li>
-    </ul>
+      <div class="section">
+        <h2>Activities</h2>
+        <ul>
+          <li>Organizer, General Affairs Department, SYSU (10/2020 – 07/2022): Coordinated activities and managed finances.</li>
+          <li>Member, East Campus Radio Station, SYSU (10/2020 – 07/2021): Produced promotional videos and participated in events.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </body>
 </html>
-
-
